@@ -1,7 +1,7 @@
 # Pygments Plugin for DocPad
 This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [DocPad](https://docpad.org)
 
-**NOTE: Please try the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead.**
+**NOTE: Please try the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead, it is way faster as it is coded in JavaScript, whereas for Pygments we have to start up new processes for each code block which is incredibly slow and sometimes unreliable.**
 
 
 ## Install
