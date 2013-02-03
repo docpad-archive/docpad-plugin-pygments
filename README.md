@@ -1,6 +1,8 @@
 # Pygments Plugin for DocPad
 This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [DocPad](https://docpad.org)
 
+**NOTE: Please try the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead.**
+
 
 ## Install
 
@@ -37,6 +39,7 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 	```
 
 4. Include your favourite [Pygments Stylesheet](https://github.com/richleland/pygments-css) into your website
+
 
 
 ## Usage
@@ -77,6 +80,9 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 	</code>
 	```
 
+
+## Deployment
+If you are wanting to generate your DocPad website on your hosting provider, rather than deploying a static site. You will have to install pygments on the host as well. You're probably better off using the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead.
 
 
 ## History
