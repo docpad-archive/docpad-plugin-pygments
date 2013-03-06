@@ -1,5 +1,11 @@
 ## History
 
+- v2.0.5 March 7, 2013
+	- Repackaged
+	- Dependency upgrades
+		-  `jsdom` 0.2.x to ~0.2.0
+		-  `coffee-script` 1.3.x to ~1.4.0
+
 - v2.0.4 October 2, 2012
 	- Fixed `EMFILE` errors
 	- Fixed incorrect output being produced sometimes (especially with markdown produced code blocks)
