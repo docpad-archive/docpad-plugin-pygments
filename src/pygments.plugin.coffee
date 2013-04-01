@@ -69,7 +69,8 @@ module.exports = (BasePlugin) ->
 
 		# Grab the source and language
 		source = balUtil.removeIndentation(bottomNode.innerHTML)
-		language = String(bottomNode.getAttribute('lang') or topNode.getAttribute('lang')).replace(/^\s+|\s+$/g,'')
+		language = bottomNode.getAttribute('lang') or topNode.getAttribute('lang')
+		language = String(language).replace(/^\s+|\s+$/g,'')  if language
 		unless language
 			if bottomNode.className.indexOf('no-highlight') isnt -1
 				language = false
