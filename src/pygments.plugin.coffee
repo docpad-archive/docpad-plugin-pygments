@@ -2,6 +2,7 @@
 module.exports = (BasePlugin) ->
 	# Requires
 	balUtil = require('bal-util')
+	{TaskGroup} = require('taskgroup')
 	jsdom = require('jsdom')
 
 	# Pygmentize some source code
@@ -133,21 +134,20 @@ module.exports = (BasePlugin) ->
 							return next()
 
 						# Tasks
-						tasks = new balUtil.Group (err) ->
+						tasks = new TaskGroup().setConfig(concurrency:0).once 'complete', (err) ->
 							return next(err)  if err
 							# Apply the content
 							opts.content = window.document.body.innerHTML
 							# Completed
 							return next()
-						tasks.total = elements.length
 
 						# Syntax highlight those elements
-						for value,key in elements
+						(key for value,key in elements).forEach (key) -> tasks.addTask (complete) ->
 							element = elements.item(key)
-							highlightElement window, element, tasks.completer()
+							highlightElement(window, element, complete)
 
-						# Done
-						true
+						# Run
+						tasks.run()
 				)
 			else
 				return next()
