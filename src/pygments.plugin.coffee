@@ -2,6 +2,7 @@
 module.exports = (BasePlugin) ->
 	# Requires
 	balUtil = require('bal-util')
+	safeps = require('safeps')
 	{TaskGroup} = require('taskgroup')
 	jsdom = require('jsdom')
 
@@ -25,9 +26,9 @@ module.exports = (BasePlugin) ->
 		command.unshift('pygmentize')
 
 		# Fire process
-		balUtil.spawn command, {stdin:source}, (err,stdout,stderr) ->
+		safeps.spawn command, {stdin:source}, (err,stdout,stderr) ->
 			# Error?
-			return next(null,err)  if err
+			return next(err, null)  if err
 
 			# Prepare
 			result = stdout or ''
@@ -35,10 +36,10 @@ module.exports = (BasePlugin) ->
 			# Render failed
 			# This happens sometimes, it seems when guessing the language pygments is every sporadic
 			if result is '' and attempt < 3
-				return pygmentizeSource(source,language,next,attempt+1)
+				return pygmentizeSource(source, language, next, attempt+1)
 
 			# All good, return
-			return next(null,result)
+			return next(null, result)
 
 		# Chain
 		@
@@ -96,7 +97,7 @@ module.exports = (BasePlugin) ->
 				resultElWrapper.innerHTML = result
 				resultElInner = resultElWrapper.childNodes[0]
 				resultElInner.className += ' highlighted codehilite'
-				topNode.parentNode.replaceChild(resultElInner,topNode)
+				topNode.parentNode.replaceChild(resultElInner, topNode)
 			return next()
 
 		# Chain
