@@ -1,44 +1,46 @@
 {
-	"name": "docpad-plugin-pygments",
-	"version": "2.1.0",
-	"description": "Adds support for Pygments Syntax Highlighting to DocPad",
-	"homepage": "http://docpad.org/plugin/pygments",
-	"keywords": [
-		"docpad",
-		"docpad-plugin",
-		"markup",
-		"markdown"
-	],
-	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-	"maintainers": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-	],
-	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-	],
-	"bugs": {
-		"url": "https://github.com/bevry/docpad-extras/issues"
-	},
-	"repository" : {
-		"type": "git",
-		"url": "http://github.com/bevry/docpad-extras.git"
-	},
-	"engines" : {
-		"node": ">=0.4",
-		"docpad": "6.x"
-	},
-	"dependencies": {
-		"bal-util": "~2.2.0",
-		"safeps": "~2.2.2",
-		"taskgroup": "~3.1.1",
-		"jsdom": "~0.6.5"
-	},
-	"devDependencies": {
-		"coffee-script": "~1.6.2",
-		"docpad": ">=6.37 <7"
-	},
-	"main": "./out/pygments.plugin.js",
-	"scripts": {
-		"test": "node ./out/pygments.test.js"
-	}
+  "name": "docpad-plugin-pygments",
+  "version": "2.1.0",
+  "description": "Adds support for Pygments Syntax Highlighting to DocPad",
+  "homepage": "http://docpad.org/plugin/pygments",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "markup",
+    "markdown"
+  ],
+  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/docpad-extras/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/docpad-extras.git"
+  },
+  "engines": {
+    "node": ">=0.4",
+    "docpad": "6.x"
+  },
+  "dependencies": {
+    "bal-util": "~2.2.0",
+    "safeps": "~2.2.2",
+    "taskgroup": "~3.1.1",
+    "jsdom": "~0.6.5"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.2"
+  },
+  "main": "./out/pygments.plugin.js",
+  "scripts": {
+    "test": "node ./out/pygments.test.js"
+  },
+  "peerDependencies": {
+    "docpad": "6"
+  }
 }
