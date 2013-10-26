@@ -24,8 +24,7 @@
     "url": "http://github.com/bevry/docpad-extras.git"
   },
   "engines": {
-    "node": ">=0.4",
-    "docpad": "6.x"
+    "node": ">=0.4"
   },
   "dependencies": {
     "bal-util": "~2.2.0",
