@@ -1,19 +1,20 @@
-## History
+# History
+
+- v2.2.0 January 10, 2014
+	- Updated dependencies
 
 - v2.1.0 June 24, 2013
-	- Dependency upgrades
+	- Updated dependencies
 
 - v2.0.7 April 5, 2013
-	- Dependency upgrades
+	- Updated dependencies
 
 - v2.0.6 April 1, 2013
-	- Dependency upgrades
+	- Updated dependencies
 
 - v2.0.5 March 7, 2013
 	- Repackaged
-	- Dependency upgrades
-		-  `jsdom` 0.2.x to ~0.2.0
-		-  `coffee-script` 1.3.x to ~1.4.0
+	- Updated dependencies
 
 - v2.0.4 October 2, 2012
 	- Fixed `EMFILE` errors

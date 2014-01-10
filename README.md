@@ -1,9 +1,18 @@
 # Pygments Plugin for [DocPad](https://docpad.org)
 
-[![Build Status](https://secure.travis-ci.org/docpad/docpad-plugin-pygments.png?branch=master)](http://travis-ci.org/docpad/docpad-plugin-pygments "Check this project's build status on TravisCI")
-[![NPM version](https://badge.fury.io/js/docpad-plugin-pygments.png)](https://npmjs.org/package/docpad-plugin-pygments "View this project on NPM")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/au/cgi-bin/webscr?cmd=_flow&SESSION=IHj3DG3oy_N9A9ZDIUnPksOi59v0i-EWDTunfmDrmU38Tuohg_xQTx0xcjq&dispatch=5885d80a13c0db1f8e263663d3faee8d14f86393d55a810282b64afed84968ec "Donate once-off to this project using Paypal")
+<!-- BADGES/ -->
+
+[![Build Status](http://img.shields.io/travis-ci/docpad/docpad-plugin-pygments.png?branch=master)](http://travis-ci.org/docpad/docpad-plugin-pygments "Check this project's build status on TravisCI")
+[![NPM version](http://badge.fury.io/js/docpad-plugin-pygments.png)](https://npmjs.org/package/docpad-plugin-pygments "View this project on NPM")
+[![Dependency Status](https://david-dm.org/docpad/docpad-plugin-pygments.png?theme=shields.io)](https://david-dm.org/docpad/docpad-plugin-pygments)
+[![Development Dependency Status](https://david-dm.org/docpad/docpad-plugin-pygments/dev-status.png?theme=shields.io)](https://david-dm.org/docpad/docpad-plugin-pygments#info=devDependencies)<br/>
+[![Gittip donate button](http://img.shields.io/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+
+<!-- /BADGES -->
+
 
 This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [DocPad](https://docpad.org)
 
@@ -12,7 +21,7 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 
 ## Install
 
-1. Install Python
+1. Install Python Dependency
 
 	If you are on Linux or OSX, generally Python is already installed for you.
 
@@ -20,7 +29,7 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 
 		1. [Install Homebrew](http://mxcl.github.com/homebrew/)
 
-		2. Install Python
+		2. Install Python Dependency
 
 			``` bash
 			brew install python
@@ -31,20 +40,26 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 		4. Now follow the generic installation instructions
 
 
-2. Install Pip
+2. Install Pip Dependency
 
 	``` bash
 	easy_install pip
 	```
 
 
-3. Install Pygments
+3. Install Pygments Dependency
 
 	```
 	pip install pygments
 	```
 
 4. Include your favourite [Pygments Stylesheet](https://github.com/richleland/pygments-css) into your website
+
+5. Install this Plugin
+
+	```
+	docpad install pygments
+	```
 
 
 
@@ -91,14 +106,61 @@ This plugin enables [Pygments](http://pygments.org/) syntax highlighting for [Do
 If you are wanting to generate your DocPad website on your hosting provider, rather than deploying a static site. You will have to install pygments on the host as well. You're probably better off using the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead.
 
 
+<!-- HISTORY/ -->
+
 ## History
-[You can discover the history inside the `History.md` file](https://github.com/bevry/docpad-plugin-ghpages/blob/master/History.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/docpad/docpad-plugin-pygments/blob/master/HISTORY.md#files)
+
+<!-- /HISTORY -->
 
 
-## Contributing
-[You can discover the contributing instructions inside the `Contributing.md` file](https://github.com/bevry/docpad-plugin-ghpages/blob/master/Contributing.md#files)
+<!-- CONTRIBUTE/ -->
 
+## Contribute
+
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/docpad/docpad-plugin-pygments/blob/master/CONTRIBUTING.md#files)
+
+<!-- /CONTRIBUTE -->
+
+
+<!-- BACKERS/ -->
+
+## Backers
+
+### Maintainers
+
+These amazing people are maintaining this project:
+
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+
+### Sponsors
+
+No sponsors yet! Will you be the first?
+
+[![Gittip donate button](http://img.shields.io/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+
+### Contributors
+
+These amazing people have contributed code to this project:
+
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/docpad/docpad-plugin-pygments/commits?author=balupton)
+
+[Become a contributor!](https://github.com/docpad/docpad-plugin-pygments/blob/master/CONTRIBUTING.md#files)
+
+<!-- /BACKERS -->
+
+
+<!-- LICENSE/ -->
 
 ## License
-Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
-<br/>Copyright &copy; 2012+ [Bevry Pty Ltd](http://bevry.me) <us@bevry.me>
+
+Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://creativecommons.org/licenses/MIT/)
+
+Copyright &copy; 2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)
+
+<!-- /LICENSE -->
+
+

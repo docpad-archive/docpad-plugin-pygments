@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-pygments",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Adds support for Pygments Syntax Highlighting to DocPad",
   "homepage": "http://docpad.org/plugin/pygments",
   "keywords": [
@@ -9,7 +9,7 @@
     "markup",
     "markdown"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "author": "2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
@@ -17,23 +17,25 @@
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "bugs": {
-    "url": "https://github.com/bevry/docpad-extras/issues"
+    "url": "https://github.com/docpad/docpad-plugin-pygments/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/bevry/docpad-extras.git"
+    "url": "https://github.com/docpad/docpad-plugin-pygments.git"
   },
   "engines": {
     "node": ">=0.4"
   },
   "dependencies": {
-    "bal-util": "~2.2.0",
-    "safeps": "~2.2.2",
-    "taskgroup": "~3.1.1",
-    "jsdom": "~0.6.5"
+    "bal-util": "~2.4.1",
+    "safeps": "~2.2.11",
+    "taskgroup": "~3.3.6",
+    "jsdom": "~0.8.10"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2"
+    "coffee-script": "~1.6.2",
+    "docpad": "6",
+    "projectz": "~0.3.9"
   },
   "main": "./out/pygments.plugin.js",
   "scripts": {
@@ -41,5 +43,18 @@
   },
   "peerDependencies": {
     "docpad": "6"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "docpad",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a"
+  },
+  "license": {
+    "type": "MIT"
   }
 }
