@@ -27,7 +27,7 @@
     "node": ">=0.4"
   },
   "dependencies": {
-    "bal-util": "~2.4.1",
+    "remove-indentation": "^1.0.0",
     "safeps": "~2.2.11",
     "taskgroup": "~3.3.6",
     "jsdom": "~0.8.10"
