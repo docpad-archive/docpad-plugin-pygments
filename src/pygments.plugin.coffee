@@ -1,7 +1,7 @@
 # Export Plugin
 module.exports = (BasePlugin) ->
 	# Requires
-	balUtil = require('bal-util')
+	removeIndentation = require('remove-indentation')
 	safeps = require('safeps')
 	{TaskGroup} = require('taskgroup')
 	jsdom = require('jsdom')
@@ -70,7 +70,7 @@ module.exports = (BasePlugin) ->
 			return @
 
 		# Grab the source and language
-		source = balUtil.removeIndentation(bottomNode.innerHTML)
+		source = removeIndentation(bottomNode.innerHTML)
 		language = bottomNode.getAttribute('lang') or topNode.getAttribute('lang')
 		language = String(language).replace(/^\s+|\s+$/g,'')  if language
 		unless language
